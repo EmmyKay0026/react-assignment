@@ -1,0 +1,229 @@
+/* h4{
+    color: red;
+}
+.third-line{
+    background-color: black;
+    color: white;
+    font-style: italic;
+} */
+
+.test{
+    color: darkgoldenrod;
+    background-color: chartreuse;
+    height: 4px;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    padding: 0 5%;
+}
+nav{
+    /* width: 92vw; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container{
+    width: 20vw;
+}
+.logo-container h3{
+    font-weight: bold;
+    font-size: 1.6rem;
+    width: fit-content;
+    cursor:pointer;
+    transition: color .5s ease-in-out;
+}
+.link-list-desk{
+    display: flex;
+    list-style: none;
+    font-size: 1.1rem;
+    color: #949090;
+}
+.link-list-desk li{
+    margin-right: 1.7rem;
+}
+.active{
+    color: black;
+}
+.hamburger-circle{
+    display: flex;
+    flex-direction: column;
+    width:40px;
+    height: 40px;
+    border: 1px solid #949090;
+    border-radius: 50%;
+    align-items: center;
+    padding-top: 18%;
+    transition: border .5s ease-in-out
+}
+
+.hamburger-circle-new{
+    border-color: white;
+    transition: all .5s ease-in-out
+}
+.hamburgers{
+    border: .5px solid #949090;
+    border-radius: 50px;
+    width: 20px;
+    height: 2px;
+    background-color: #949090;
+    margin-top: 7px;
+    transition: all .5s ease-in-out
+}
+.new-ham1{
+    border-color: red;
+    background-color: red;
+    transform: rotate(45deg) translate(3px, 5px);
+    transition:all .5s ease-in-out
+}
+.new-ham2 {
+    border-color: red;
+    background-color: red;
+    transform: rotate(315deg) translate(3px, -5px);
+    transition:all .5s ease-in-out;
+}
+.drop-down{
+    background-color: rgb(169, 169, 169);
+    width: 0;
+    height: 100vh;
+    padding-top: 10vh;
+    filter:sepia(3px);
+    /* position: relative;
+    bottom: 20vh; */
+    padding-left: 5%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: all 3s ease-in-out;
+}
+.drop-down:hover{
+    width:25%;
+    transition: all 3s ease-in-out;
+}
+.link-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    
+}
+
+.list-items {
+    padding-bottom: 10px;
+    border-bottom: 1px solid transparent;
+    font-size: 1.7rem;
+    min-width:40px !important;
+}
+.list-items::before {
+    content:'\2022';
+    color:transparent;
+    margin-right: 15px;
+}
+.list-items:hover .list-items::before:hover{
+    color: black;
+}
+.list-items:not(:first-child) {
+    margin-top: 50px;
+}
+
+.list-items:hover {
+    border-bottom: 1px solid red;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.hero-split-div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 8%;
+    margin-top: 20px;
+}
+.hero-h1{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
+.hero-p{
+    width: 80%;
+    padding-top:10%;
+    color: #949090; 
+}
+.gallery-box{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+}
+.gallery-box div{
+    border: 1px solid black;
+    padding: 0 10px;
+    height: 30vh;
+}
+.curve-line{
+    width: 100%;
+    height: 20px;
+    border: solid 5px #949090;
+    border-color: #949090 transparent transparent transparent;
+    border-radius: 50%/100px 100px 0 0;
+    margin-top: 30px;
+}
+.bottom-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top:2%;
+}
+.bottom-section-text h4{
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: .8em;
+}
+.bottom-section-text p{
+    color: #949090;
+    line-height: 0;
+}
+.circle-btn-container{
+    display: flex;
+}
+.carousel-btn{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #949090;
+    border-radius: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color:#949090;
+    margin-right: 20px;
+}
+@media screen and (max-width:768px) {
+    .logo-container {
+        width: 50vw;
+    }
+
+    .logo-container h3 {
+        font-size: 1.3rem;
+    } 
+    .link-list-desk {
+        display: none;
+    }
+    .hero-split-div {
+        display: block;
+        width: 70%;
+    }
+
+    .hero-h1 {
+        font-size: 2.3rem;
+        font-weight: 300;
+        line-height: 1.3em;
+    }
+
+    .hero-p {
+        padding-top:0%;
+        color: #949090;
+    }
+    
+    
+}
